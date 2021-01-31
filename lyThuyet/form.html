@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>from trong css</title>
+    <meta charset = "utf-8">
+  </head>
+  <!--
+    form
+    label
+    input
+      autofocus
+      autocomplete
+      placeholder: chu in nhạt trong input text
+    textarea: tạo ra một hộp dữ liệu dạng text có nhiều dòng
+    button: tạo nút 
+    select/option
+      multiple: cho phép chọn nhiêu đối tượng 
+    fieldset/legend: đóng khung form
+  -->
+  <body>
+    <h1>from dữ liệu</h1>
+    <!-- account imformation -->
+    <form action="" method="post">
+      <fieldset>
+        <legend> account imformation</legend>
+        <label for="Username"> Username</label>
+        <input type="text" name = "Username" id ="Username" autofocus=""
+         placeholder="User name" autocomplete=""> <br>
+        <label for="password"> Password</label>
+        <input type="password" name ="password" id="password" placeholder="password"> <br>
+      </fieldset>
+    </form>
+    <!--Gender -->
+    <form action="" method="post">
+      <label for="">Gender:</label>
+      <input type="radio" name="gender" id="male" value="male">
+      <label for="male">male</label>
+      <input type="radio" value="female" name ="gender" id ="female">
+      <label for="female">female</label>
+    </form>
+    <!-- Hobbies -->
+    <form action="" method="post">
+      <label for="Hobbies">Hobbies</label> <br>
+      <input type="checkbox" name="hobbies" id="travel" value ="travel">
+      <label for="travel"> travel</label> <br>
+      <input type="checkbox" name="hobbies" id="playsports">
+      <label for="playsports">playsports</label>
+    </form>
+    <!-- Birthday -->
+      <form action="" method="post">
+    <label for="">Birthday</label>
+      <select name="day" id="">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+      <select name="month" id="">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+      <select name="year" id="">
+        <option value="2000">2000</option>
+        <option value="2001">2001</option>
+        <option value="2002">2002</option>
+      </select>
+      </form>
+      <!-- position -->
+      <form action="" method="post">
+        <label for="">position</label>
+        <select name="position" id="" size = "" multiple="">
+          <option value="studen">studen</option>
+          <option value="teacher">teacher</option>
+          <option value="employee">employee</option>
+        </select>
+      </form>
+      <!-- note: -->
+      <form action="" mehtod = "post">
+        <label for="note">note:</label>
+        <textarea name="note" id="" cols="30" rows="5"></textarea>
+        <br>
+        <!-- 3 cach tao button -->
+        <input type="submit" value ="login" name="" id="">  
+        <button type="reset"> reset </button>
+        <input type="button" value ="button">
+      </form>
+      
+  </body>
+</html>
